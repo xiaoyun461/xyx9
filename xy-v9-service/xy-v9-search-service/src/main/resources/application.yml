@@ -1,0 +1,29 @@
+spring:
+  data:
+    solr:
+      host: http://192.168.0.100:8983/solr/testcore
+  thymeleaf:
+    cache: false
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.103:3306/xy-v9?useUnicode=true&characterEncoding=utf8
+  rabbitmq:
+    username: admin
+    password: admin
+    host: 192.168.0.100
+    port: 5672
+    virtual-host: my_vhost
+dubbo:
+  application:
+    name: search-service
+  registry:
+    protocol: zookeeper
+    address: 192.168.0.103:2181
+  protocol:
+    port: 28801
+server:
+  port: 8081
+
+

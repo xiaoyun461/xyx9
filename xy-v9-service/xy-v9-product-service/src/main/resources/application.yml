@@ -1,0 +1,17 @@
+dubbo:
+  application:
+    name: product-service
+  registry:
+    protocol: zookeeper
+    address: 192.168.0.103:2181
+  protocol:
+    port: 28800
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.103:3306/xy-v9?useUnicode=true&characterEncoding=utf8

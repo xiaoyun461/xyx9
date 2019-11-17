@@ -1,0 +1,35 @@
+dubbo:
+  application:
+    name: background
+  registry:
+    protocol: zookeeper
+    address: 192.168.0.103:2181
+server:
+  port: 9090
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.103:3306/xy-v9?useUnicode=true&characterEncoding=utf8
+  thymeleaf:
+    cache: false
+  rabbitmq:
+    username: admin
+    password: admin
+    host: 192.168.0.100
+    port: 5672
+    virtual-host: my_vhost
+image:
+  server: http://192.168.0.103/
+fdfs:
+  so-timeout: 1500
+  connect-timeout: 600
+  pool:
+    jmx-enabled: false
+  thumb-image:
+    width: 100
+    height: 100
+  tracker-list: 192.168.0.103:22122
+
+

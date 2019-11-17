@@ -1,0 +1,29 @@
+dubbo:
+  application:
+    name: item-service
+  registry:
+    protocol: zookeeper
+    address: 192.168.0.103:2181
+  protocol:
+    port: 28803
+server:
+  port: 8083
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.103:3306/xy-v9?useUnicode=true&characterEncoding=utf8
+  rabbitmq:
+    username: admin
+    password: admin
+    host: 192.168.0.100
+    port: 5672
+    virtual-host: my_vhost
+
+html:
+  locations: D:\\html\
+
+
+
+
